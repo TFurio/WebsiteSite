@@ -20,13 +20,10 @@ from MyApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
-    path('home/', views.home, name='home'),
-    path('contact/', views.contact, name='contact'),
-    path('gallery/', views.gallery, name='gallery'),
-    path('services/', views.services, name='services'),
-    path('examples/', views.examples, name='examples'),
-
-
-
+    path('', views.home, name='home'),  # Home page
+    path('home/', views.home, name='home'),  # Home page alias
+    path('contact/', views.contact, name='contact'),  # Contact page
+    path('gallery/', views.gallery, name='gallery'),  # Gallery page
+    path('services/', views.services, name='services'),  # Services page
+    path('examples/', views.examples, name='examples'),  # Examples/Sites created page
 ]

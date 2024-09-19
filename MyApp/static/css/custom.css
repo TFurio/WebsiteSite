@@ -29,9 +29,13 @@ img {
 .carousel-caption {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Ensures centering */
     text-align: center;
     color: #fff;
+    max-width: 70%; /* Adjusts max-width to prevent text spilling */
+    width: 100%; /* Ensures caption takes full width of carousel */
+    padding: 0 15px; /* Add padding to prevent text from touching edges */
 }
 
 .carousel-caption h1 {
@@ -54,8 +58,8 @@ img {
 .carousel-indicators {
     position: absolute;
     bottom: 20px;
-    right: 50%;
-    transform: translateX(50%);
+    left: 50%; /* Center the indicators */
+    transform: translateX(-50%);
 }
 
 /* Service Section */
@@ -99,4 +103,3 @@ footer .col {
 .btn-primary:hover {
     background-color: #ff6169;
 }
-
