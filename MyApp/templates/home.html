@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - Website Warriors{% endblock %}
+
+{% block content %}
+<section id="intro" class="full-width">
+    <div class="row no-gutters">
+        <div class="col-lg-8">
+            <h2>Welcome to the solution to all your companies' website needs</h2>
+            <p>We are a leading provider of website building, hosting, and SEO services for local businesses. Our mission is to help businesses establish a strong online presence and grow their customer base.</p>
+        </div>
+        <div class="col-lg-4">
+            <img src="{% static 'images/WebsiteWarriors.png' %}" class="card-img-top" alt="Website Warriors">
+        </div>
+    </div>
+</section>
+
+<section id="services" class="bg-light">
+    <h3>Services we Provide</h3>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="service">
+                <h4>Website Creation</h4>
+                <p>Our expert team will design and develop a professional website tailored to your business needs.</p>
+                <img src="{% static 'images/WebExCode.JPG' %}" class="service-img" alt="Website Creation">
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="service">
+                <h4>Hosting</h4>
+                <p>We provide reliable and secure hosting solutions using AWS to ensure your website is always up and running.</p>
+                <img src="{% static 'images/AWS.JPG' %}" class="service-img" alt="Hosting">
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="service">
+                <h4>SEO</h4>
+                <p>Improve your website's visibility on search engines and attract more customers with our SEO services.</p>
+                <img src="{% static 'images/WebExSEO.JPG' %}" class="service-img" alt="SEO">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sites" class="py-5">
+    <div class="container-fluid">
+        <h2>Types of Sites We Create</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="location-card">
+                    <p>E-Commerce Stores</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="location-card">
+                    <p>Business Pages</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="location-card">
+                    <p>Blogs</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="location-card">
+                    <p>Educational Pages</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="location-card">
+                    <p>Portfolios</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="location-card">
+                    <p>Promotional Pages</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="location-card">
+                    <p>Online Stores</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="location-card">
+                    <p>And More!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

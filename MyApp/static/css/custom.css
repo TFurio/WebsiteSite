@@ -1,0 +1,102 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h2, h3, h4 {
+    color: #343a40;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Full-screen Background Carousel */
+.carousel-item {
+    height: 100vh; /* Full height of the viewport */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.carousel-caption h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+.carousel-caption .btn {
+    background-color: #ff414d;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+/* Service Section */
+.service {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.service h4 {
+    font-size: 1.5rem;
+}
+
+.service p {
+    font-size: 1rem;
+}
+
+.service-img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem;
+}
+
+footer .col {
+    text-align: center;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #ff414d;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff6169;
+}
+
