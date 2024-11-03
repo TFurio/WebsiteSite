@@ -68,3 +68,6 @@ $(".product-switcher a").on("click", function() {
     }
     return false;
 });
+
+
+  

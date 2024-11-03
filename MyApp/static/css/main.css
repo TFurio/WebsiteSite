@@ -1,0 +1,262 @@
+/* General Body Styling */
+body, html {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Headings */
+h2, h3, h4 {
+    color: #fff;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Full-screen Background Carousel */
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 50vh;
+    }
+}
+
+/* Carousel Caption Styling */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    max-width: 70%;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.carousel-caption h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption .btn {
+    background-color: #ff414d;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+}
+
+/* Service Section */
+#services {
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #000;
+}
+
+.service {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    margin: 10px;
+    flex: 1; /* Ensures equal width */
+    max-width: 300px; /* Restrict max-width */
+}
+
+.service h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.service-img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Service Row Layout */
+#services .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* Keeps items in a single row */
+}
+
+/* Responsive Adjustment */
+@media (max-width: 992px) {
+    #services .row {
+        flex-wrap: wrap; /* Stacks items if screen width is too narrow */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #aaa;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #adb5bd;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Navbar and Banner Styling */
+.banner, #basenav {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner a, #basenav .navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.banner a:hover, #basenav .navbar-nav .nav-link:hover {
+    color: #ff414d;
+}
+
+#basenav .navbar-brand {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.5rem;
+}
+
+#basenav .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+#basenav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 992px) {
+    #basenav .navbar-nav {
+        text-align: center;
+    }
+
+    #basenav .navbar-nav .nav-link {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Intro Section Styling */
+#intro {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#intro h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 1.2em;
+    color: #aaa;
+}
+
+/* Video Styling */
+video {
+    border: none;
+    border-radius: 0;
+}
+
+/* Sites Section */
+/* Sites Section */
+#sites {
+    background-color: #000; /* Black background for the entire section */
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#sites h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Individual Site Type Cards */
+.location-card {
+    background-color: #222; /* Darker gray for each container */
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
